@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan John — Computer Science Engineering Student</title>
+  <meta name="description" content="Portfolio of Bryan John, Computer Science Engineering student at Rajiv Gandhi Institute of Technology, Pampady, Kerala." />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (labels/code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__brand">BJ<span class="cursor" aria-hidden="true">_</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">about</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#certifications">certifications</a></li>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content fade-in">
+          <p class="eyebrow">~/whoami</p>
+          <h1 class="hero__name">Bryan John<span class="cursor" aria-hidden="true">_</span></h1>
+          <p class="hero__role">Computer Science Engineering Student</p>
+          <p class="hero__meta">
+            Rajiv Gandhi Institute of Technology (RIT), Pampady<br />
+            Kerala, India
+          </p>
+          <p class="hero__intro">
+            I'm an engineering student who enjoys building things end to end — from
+            clean, efficient code to systems that quietly do their job well. Currently
+            exploring software development, artificial intelligence, and embedded systems,
+            one project at a time.
+          </p>
+
+          <div class="hero__actions">
+            <!-- Replace assets/resume.pdf with your actual resume file -->
+            <a href="assets/resume.pdf" class="btn btn--primary" download>Download Resume</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__photo-wrap fade-in">
+          <div class="hero__photo">
+            <!-- Replace this SVG placeholder with an actual <img src="images/profile.jpg" alt="Bryan John"> -->
+            <svg viewBox="0 0 200 200" role="img" aria-label="Profile photo placeholder">
+              <circle cx="100" cy="100" r="100" fill="var(--card)"/>
+              <circle cx="100" cy="80" r="34" fill="var(--border)"/>
+              <path d="M40 175c8-38 40-58 60-58s52 20 60 58" fill="var(--border)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span>scroll</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 4v16M5 13l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow fade-in">~/about</p>
+        <h2 class="section__title fade-in">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__text fade-in">
+            <p>
+              I'm Bryan John, a second-year Computer Science Engineering student at
+              RIT Pampady, Kerala. I like understanding how things work under the hood —
+              whether that's a line of code, a trained model, or a microcontroller — and
+              then building something useful with that understanding.
+            </p>
+            <p>
+              My career objective is simple: grow into a well-rounded software engineer
+              who can move comfortably between application development, intelligent
+              systems, and the hardware that runs them, while contributing meaningfully
+              to open-source and collaborative projects along the way.
+            </p>
+          </div>
+
+          <div class="about__interests fade-in">
+            <h3 class="about__interests-title">Interests</h3>
+            <ul class="interest-list">
+              <li>Software Development</li>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Embedded Systems</li>
+              <li>Open Source</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section section--alt">
+      <div class="container">
+        <p class="eyebrow fade-in">~/education</p>
+        <h2 class="section__title fade-in">Education</h2>
+
+        <div class="card fade-in">
+          <div class="card__row">
+            <div>
+              <h3 class="card__title">B.Tech, Computer Science Engineering</h3>
+              <p class="card__subtitle">Rajiv Gandhi Institute of Technology (RIT), Pampady</p>
+              <p class="card__meta">Affiliated to APJ Abdul Kalam Technological University</p>
+            </div>
+            <span class="badge">Second Year</span>
+          </div>
+        </div>
+
+        <div class="edu-stats">
+          <div class="stat-card fade-in">
+            <span class="stat-card__value">98.2%</span>
+            <span class="stat-card__label">Class X</span>
+          </div>
+          <div class="stat-card fade-in">
+            <span class="stat-card__value">98%</span>
+            <span class="stat-card__label">Class XII</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow fade-in">~/skills</p>
+        <h2 class="section__title fade-in">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="card fade-in">
+            <h3 class="card__title">Programming</h3>
+            <ul class="tag-list">
+              <li>C</li><li>Python</li><li>JavaScript</li><li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in">
+            <h3 class="card__title">Web</h3>
+            <ul class="tag-list">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in">
+            <h3 class="card__title">Tools</h3>
+            <ul class="tag-list">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Linux</li>
+            </ul>
+          </div>
+
+          <div class="card fade-in">
+            <h3 class="card__title">Machine Learning</h3>
+            <ul class="tag-list">
+              <li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Scikit-learn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section section--alt">
+      <div class="container">
+        <p class="eyebrow fade-in">~/certifications</p>
+        <h2 class="section__title fade-in">Certifications</h2>
+
+        <!-- Placeholder cards — replace title/issuer/date with real certifications -->
+        <div class="cert-grid">
+          <div class="card cert-card fade-in">
+            <div class="cert-card__icon" aria-hidden="true">▣</div>
+            <h3 class="card__title">Certification Title</h3>
+            <p class="card__subtitle">Issuing Organization</p>
+            <p class="card__meta">Month Year</p>
+          </div>
+
+          <div class="card cert-card fade-in">
+            <div class="cert-card__icon" aria-hidden="true">▣</div>
+            <h3 class="card__title">Certification Title</h3>
+            <p class="card__subtitle">Issuing Organization</p>
+            <p class="card__meta">Month Year</p>
+          </div>
+
+          <div class="card cert-card fade-in">
+            <div class="cert-card__icon" aria-hidden="true">▣</div>
+            <h3 class="card__title">Certification Title</h3>
+            <p class="card__subtitle">Issuing Organization</p>
+            <p class="card__meta">Month Year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section resume-section">
+      <div class="container resume__inner fade-in">
+        <div>
+          <p class="eyebrow">~/resume</p>
+          <h2 class="section__title">Resume</h2>
+          <p class="resume__text">
+            A concise summary of my education, skills, and interests — available as a
+            downloadable PDF.
+          </p>
+        </div>
+        <!-- Replace assets/resume.pdf with your actual resume file -->
+        <a href="assets/resume.pdf" class="btn btn--primary" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <p class="eyebrow fade-in">~/contact</p>
+        <h2 class="section__title fade-in">Get in Touch</h2>
+        <p class="contact__text fade-in">
+          Feel free to reach out — I'm always open to connecting, collaborating, or
+          just talking tech.
+        </p>
+
+        <!-- Replace href values with your real contact details -->
+        <div class="contact__links fade-in">
+          <a href="mailto:bryanjohn@example.com" class="contact__link">
+            <span class="contact__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z" stroke-linejoin="round"/><path d="M3 6l9 7 9-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>bryanjohn@example.com</span>
+          </a>
+
+          <a href="https://github.com/bryanjohn" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.32 9.32 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.41.21 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </span>
+            <span>github.com/bryanjohn</span>
+          </a>
+
+          <a href="https://linkedin.com/in/bryanjohn" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.5 8.5h3.9V21H3.5V8.5zM10 8.5h3.74v1.71h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 5.99V21h-3.9v-5.94c0-1.42-.03-3.24-1.98-3.24-1.98 0-2.28 1.55-2.28 3.14V21H10V8.5z"/></svg>
+            </span>
+            <span>linkedin.com/in/bryanjohn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Bryan John. All rights reserved.</p>
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20V4M5 11l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
